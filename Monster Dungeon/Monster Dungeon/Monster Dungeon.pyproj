@@ -1,0 +1,54 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8010fca5-3420-444f-962b-1940b8132bf5</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Monster Dungeon</Name>
+    <RootNamespace>Monster Dungeon</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="beginner_factory.py" />
+    <Compile Include="check_input.py" />
+    <Compile Include="easy_goblin.py" />
+    <Compile Include="easy_ogre.py" />
+    <Compile Include="easy_troll.py" />
+    <Compile Include="enemy_factory.py" />
+    <Compile Include="entity.py" />
+    <Compile Include="expert_factory.py" />
+    <Compile Include="goblin.py" />
+    <Compile Include="hero.py" />
+    <Compile Include="map.py" />
+    <Compile Include="main.py" />
+    <Compile Include="ogre.py" />
+    <Compile Include="troll.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lab_12.pyproj" />
+    <Content Include="map1.txt" />
+    <Content Include="map2.txt" />
+    <Content Include="map3.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

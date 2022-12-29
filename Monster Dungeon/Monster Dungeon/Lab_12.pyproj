@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4366f110-c753-42ee-8e12-644511f66646}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>beginner_factory.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="map1.txt" />
+    <Content Include="map2.txt" />
+    <Content Include="map3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="beginner_factory.py" />
+    <Compile Include="check_input.py" />
+    <Compile Include="easy_goblin.py" />
+    <Compile Include="easy_ogre.py" />
+    <Compile Include="easy_troll.py" />
+    <Compile Include="enemy_factory.py" />
+    <Compile Include="entity.py" />
+    <Compile Include="expert_factory.py" />
+    <Compile Include="goblin.py" />
+    <Compile Include="hero.py" />
+    <Compile Include="main.py" />
+    <Compile Include="map.py" />
+    <Compile Include="ogre.py" />
+    <Compile Include="troll.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

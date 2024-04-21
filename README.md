@@ -18,3 +18,5 @@ This repository contains the source code for my personal resume website. It show
   - HTML5
   - CSS3
   - JavaScript
+
+You can also visit my [website](https://home.csulb.edu/~014794518/) for more information.
